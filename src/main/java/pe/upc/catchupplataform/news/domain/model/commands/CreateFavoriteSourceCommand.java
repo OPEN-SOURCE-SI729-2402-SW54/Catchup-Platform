@@ -1,4 +1,4 @@
 package pe.upc.catchupplataform.news.domain.model.commands;
 
-public record CreateFavoriteSourceCommand(long id, long favoriteSourceId) {
+public record CreateFavoriteSourceCommand(String newsApiKey, String sourceId) {
 }
