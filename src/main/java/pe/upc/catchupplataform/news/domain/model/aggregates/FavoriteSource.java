@@ -11,16 +11,11 @@ public class FavoriteSource {
     private Long id;
 
     @Getter
-    private String newsApiKey;
-
-    @Column(nullable = false)
-    @Getter
     private String sourceId;
 
     protected FavoriteSource() {}
 
     public FavoriteSource(CreateFavoriteSourceCommand command) {
-        this.newsApiKey = command.newsApiKey();
         this.sourceId = command.sourceId();
     }
 }
